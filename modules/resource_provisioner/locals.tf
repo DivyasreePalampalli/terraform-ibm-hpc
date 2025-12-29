@@ -6,7 +6,7 @@ locals {
   #  da_hpc_repo_url        = "github.ibm.com/workload-eng-services/HPCaaS.git"
   da_hpc_repo_url             = "github.com/terraform-ibm-modules/terraform-ibm-hpc.git"
   da_hpc_lsf_repo_tag         = "v3.2.0"
-  da_hpc_scale_repo_tag       = "v3.1.0"
+  da_hpc_scale_repo_tag       = "main_backup_10_dec"
   da_hpc_repo_tag             = var.scheduler == "Scale" ? local.da_hpc_scale_repo_tag : local.da_hpc_lsf_repo_tag
   remote_ansible_path         = format("%s/ibm-spectrumscale-cloud-deploy", local.deployer_path)
   scale_cloud_infra_repo_url  = "https://github.com/jayeshh123/ibm-spectrum-scale-install-infra"
