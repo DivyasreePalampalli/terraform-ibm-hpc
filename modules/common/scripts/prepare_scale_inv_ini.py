@@ -966,7 +966,7 @@ def initialize_scale_ces_details(
         export_node_ip_map = [
             {protocol_cluster_instance_name.split(".")[0]: ip}
             for protocol_cluster_instance_name, ip in zip(
-                protocol_cluster_instance_names, export_ip_pool, strict=False
+                protocol_cluster_instance_names, export_ip_pool
             )
         ]
 
